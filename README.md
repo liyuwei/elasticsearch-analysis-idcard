@@ -6,6 +6,13 @@
     
 ```
 
+```$xslt
+    GET _analyze
+    {
+      "analyzer": "idcard",
+      "text": "230621198888888"
+    }
+```
 
 # mvn clean package 
 ```$xslt
