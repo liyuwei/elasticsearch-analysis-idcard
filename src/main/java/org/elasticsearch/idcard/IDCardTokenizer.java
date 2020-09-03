@@ -41,6 +41,7 @@ public class IDCardTokenizer extends Tokenizer {
             return false;
         } else {
             termAtt.setEmpty().append(splitTup[termSize]);
+            offsetAtt.setOffset(0, 2 + termSize * 2);
             termSize++;
             return true;
         }
