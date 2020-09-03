@@ -10,7 +10,7 @@ public class IDCardAnalyzerTest {
     public void testAnalyzer() throws Exception {
 
         IDCardAnalyzer analyzer = new IDCardAnalyzer();
-        TokenStream ts = analyzer.tokenStream("text", "230621");
+        TokenStream ts = analyzer.tokenStream("text", "2306211999");
         CharTermAttribute term = ts.addAttribute(CharTermAttribute.class);
         ts.reset();
         while (ts.incrementToken()) {
@@ -20,7 +20,7 @@ public class IDCardAnalyzerTest {
         ts.close();
 
         System.out.println("----------------------------------——————————————————————————---------");
-        TokenStream tss = analyzer.tokenStream("text", "哈哈,哈哈");
+        TokenStream tss = analyzer.tokenStream("text", "220621");
         CharTermAttribute terms = tss.addAttribute(CharTermAttribute.class);
         tss.reset();
         while (tss.incrementToken()) {
@@ -31,12 +31,7 @@ public class IDCardAnalyzerTest {
 
 
 
-//        String substring = "我爱 北京 天安门".substring(0, 3);
-//        System.out.println(substring + "=");
-//        String substring1 = "我爱 北京 天安门".substring(3, 6);
-//        System.out.println(substring1 + "=");
-//        String substring2 = "我爱 北京 天安门".substring(6, 9);
-//        System.out.println(substring2 + "=");
+
 
 
     }

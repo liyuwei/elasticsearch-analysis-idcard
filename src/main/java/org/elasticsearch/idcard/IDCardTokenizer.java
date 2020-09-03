@@ -73,9 +73,9 @@ public class IDCardTokenizer extends Tokenizer {
         String city1 = source.substring(0, 2);
         String city2 = source.substring(0, 4);
         String city3 = source.substring(0, 6);
-        String cityName1 = IdCardDataUtil.getNameString(Integer.parseInt(city1));
-        String cityName2 = IdCardDataUtil.getNameString(Integer.parseInt(city2));
-        String cityName3 = IdCardDataUtil.getNameString(Integer.parseInt(city3));
+        String cityName1 = IDCardDataUtil.getNameString(Integer.parseInt(city1));
+        String cityName2 = IDCardDataUtil.getNameString(Integer.parseInt(city2));
+        String cityName3 = IDCardDataUtil.getNameString(Integer.parseInt(city3));
         splitTup = new String[3];
         splitTup[0] = cityName1;
         splitTup[1] = cityName2;
